@@ -112,3 +112,48 @@ This project is licensed under the MIT License.
 - UI by `v0.dev`
 - App about `llamaindex` agentic platform
 - Creator `blue lotus` aka `lotus chain`
+
+---
+
+## Topology
+```
+█████████████████████
+█  User Request     █
+█████████████████████
+          █
+          ▼
+██████████████████████
+█   Manager Agent    █
+█(Subtask Generation)█
+██████████████████████
+          █
+          ▼
+████████████████████████████████████████
+█ Distribute Subtasks to Worker Agents █
+████████████████████████████████████████
+          █
+  ███████████████████   ██████████████████████
+  █Worker Agent 1   █   █   Worker Agent N   █
+  █(Process Subtask)█   █   (Process Subtask)█
+  ███████████████████   ██████████████████████
+          █                   █
+          ▼                   ▼
+  ███████████████   ███████████████
+  █   Answer 1  █   █ Answer N    █
+  ███████████████   ███████████████
+          █
+███████████████████████████████████████
+█ Collect Answers from Worker Agents  █
+███████████████████████████████████████
+          █
+          ▼
+█████████████████████
+█   Compile Answers █
+█████████████████████
+          █
+          ▼
+█████████████████████████████
+█     TS Standard Agent     █
+█       (Output Result)     █
+█████████████████████████████
+```
