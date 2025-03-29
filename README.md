@@ -1,3 +1,7 @@
+<div align="right">
+<sub>Public | Free OpenSource</sub>
+</div>
+
 # Bluelotus Llamaindex Agent Generator (LamaGen)
 
 ## Presentation
